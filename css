@@ -1,0 +1,77 @@
+<head>
+
+<link rel="stylesheet" href="style.css">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>تکرار عدد</title>
+
+</head>
+
+<body>
+   <div>
+        <div class="div1" >
+            <label for="adad1" style="font-size:20px ;"> عدد اول</label>
+            <br>
+
+            <input type="text" class="adad1" id="adad1"  >
+            <br>     
+            <br>
+
+            <label for="adad2" style="font-size:20px;" >عدد دوم</label>
+            <br>
+
+            <input type="text" class="adad2" id="adad2">
+            <br>
+            <br>
+            <label for="adad3"style="font-size:20px " > عددی که تعداد تکرارش رو میخواهیم</label>
+            <br>
+
+            <input type="text" class="adad2" id="adad3">
+            <br>
+            <br>
+
+
+            <button type="submit" onclick="a()">ثبت</button>
+
+            <br>
+            <br>
+            <br>
+
+            <div id="div2">
+            
+            </div>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+        </div>
+
+</div> 
+<script>
+    function a(){    var tekrar=0
+
+        var adad1=document.getElementById("adad1").value;
+        var adad2=document.getElementById("adad2").value;
+        var adad3=document.getElementById("adad3").value;
+
+
+        for(var i=adad1;i<=adad2;i++){
+            var var1 = i.toString().charAt(0);
+            var var2 = i.toString().charAt(1);
+            var var3 = i.toString().charAt(2);
+            if(var1==adad3){
+                tekrar++
+            }
+            if(var2==adad3){
+                tekrar++
+            }
+            if(var3==adad3){
+                tekrar++
+            }
+
+        }
+        document.getElementById("div2").innerHTML="تعداد تکرار رقم "+document.getElementById("adad3").value+" برابره با:"+tekrar}
+</script>
+
+</body>
