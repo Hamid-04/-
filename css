@@ -1,0 +1,52 @@
+@font-face {
+    font-family: face;
+    src: url(DigiLotosBold.ttf);
+}
+body{
+    background-image: url(math.jpg);
+    background-repeat: no-repeat;
+    background-size: cover
+}
+.div1{
+    box-shadow: 30px 24px 35px black;
+    border-radius: 20px;
+    font-family: face;
+    width: 450px;
+    height: 450px;
+    text-align: center;
+    background-color: rgba(44, 156, 63, 0.678);
+    margin: auto;
+    margin-top:30px ;
+    color: rgb(110, 23, 23);
+    
+}
+.adad1,.adad2{
+background-color: rgb(231, 228, 228);
+border-radius: 20px;
+}
+button{
+    background-color: rgb(40, 128, 108);
+    border-radius: 10px;
+    transition-duration: 1s;
+    height: 30px;
+    width: 90px;
+    font-size: large;
+}
+button:hover{
+    scale: 1.2;
+    box-shadow: 10px 2px 35px black;
+
+
+}
+#div2{
+    font-size: 20px;
+    background-color: rgba(6, 184, 15, 0.589);
+    display: inline-block;
+    border-radius: 10px;
+color: aliceblue;
+transition-duration: 1s;
+
+}
+#div2:hover{
+    scale: 1.2;
+}
